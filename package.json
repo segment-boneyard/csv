@@ -1,0 +1,13 @@
+{
+  "name": "csv",
+  "version": "0.0.1",
+  "repository": "segmentio/csv",
+  "description": "Simple CSV formatter",
+  "keywords": ["csv", "stringify", "format", "formatter"],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "license": "MIT"
+}
