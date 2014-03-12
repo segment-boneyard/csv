@@ -26,6 +26,6 @@ exports.stringify = function(rows, opts){
  */
 
 function quote(val) {
-  val = val.replace(/"/g, '""');
+  val = String(val).replace(/"/g, '""');
   return '"' + val + '"';
 }

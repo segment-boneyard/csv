@@ -15,4 +15,9 @@ describe('csv.stringify(array)', function(){
     var str = csv.stringify([['"hey"']]);
     str.should.equal('"""hey"""');
   })
+
+  it('should coerce values to strings', function(){
+    var str = csv.stringify([[1, /test/]]);
+    str.should.equal('"1","/test/"');
+  })
 })
