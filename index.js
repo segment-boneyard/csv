@@ -49,7 +49,7 @@ function quote(val) {
 }
 
 /**
- * Unquote `val`.
+ * Unescape and unquote `val`.
  *
  * @param {String} val
  * @return {String}
