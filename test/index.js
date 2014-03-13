@@ -1,6 +1,21 @@
 
 var csv = require('..');
 
+describe('csv.parse(string)', function(){
+  it('should delimit with a comma by default', function(){
+    var arr = csv.parse('"foo","bar","baz"\n"one","two","three"');
+    arr.should.eql([
+      ['foo', 'bar', 'baz'],
+      ['one', 'two', 'three']
+    ]);
+  })
+
+  it('should unquote quotes', function(){
+    var arr = csv.parse('"hey","""hey""","""""hey"""""');
+    arr.should.eql([['hey', '"hey"', '""hey""']]);
+  })
+})
+
 describe('csv.stringify(array)', function(){
   it('should delimit with a comma by default', function(){
     var str = csv.stringify([
