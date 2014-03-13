@@ -5,4 +5,7 @@ test:
 		--reporter dot \
 		--bail
 
-.PHONY: test
+bench:
+	@node bench/large
+
+.PHONY: test bench
