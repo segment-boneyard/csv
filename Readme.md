@@ -20,6 +20,20 @@ csv.stringify([
 ]);
 ```
 
+## API
+
+### csv.parse(string, [options])
+
+  Parse a string of CSV.
+
+### csv.stringify(rows, [options])
+
+  Stringify an array of rows.
+
+### csv.stream([options])
+
+  Create a CSV stream.
+
 # License
 
   MIT
