@@ -35,4 +35,11 @@ describe('csv.stringify(array)', function(){
     var str = csv.stringify([[1, /test/]]);
     str.should.equal('"1","/test/"');
   })
+
+  describe('.null option', function(){
+    it('should set the null string', function(){
+      var str = csv.stringify([[null, undefined, 0]], { null: 'NULL' });
+      str.should.eql('NULL,NULL,"0"');
+    })
+  })
 })
