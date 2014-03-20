@@ -30,6 +30,10 @@ csv.stringify([
 
   Stringify an array of rows.
 
+### csv.stringify.row(row, [options])
+
+  Stringify a single row of columns.
+
 ### csv.stream([options])
 
   Create a CSV stream.
