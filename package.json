@@ -1,6 +1,6 @@
 {
   "name": "csv",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "repository": "segmentio/csv",
   "description": "Simple CSV formatter",
   "keywords": ["csv", "stringify", "format", "formatter"],
